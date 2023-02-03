@@ -1,0 +1,146 @@
+<!-- Este es un comentario -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Etiqueta para la codificacion de mi pagina, permite las ñ o las ~ por ejemplo -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- Compatibilidad con navegadores obsoletos -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- La escala inicial en la vista del documento -->
+  <title>Document</title>
+</head>
+<body>
+  <!-- Etiquetas de cabecera -->
+  <h1>Este es un H1</h1>
+  <h2>Este es un H2</h2>
+  <h3>Este es un H3</h3>
+  <h4>Este es un H4</h4>
+  <h5>Este es un H5</h5>
+  <h6>Este es un H6</h6>
+
+  <!-- Etiquetas de parrafos -->
+  <p >
+    <!-- Todo esto se inserta solo escribiendo Lorem -->
+    <em> <!--  <em> Etiqueta utilizada como atributo para convertir algo a cursiva -->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, praesentium dignissimos?</em> Cupiditate doloremque nesciunt voluptate, 
+    pariatur, at mollitia autem repellat harum velit quod in expedita assumenda. Similique magni debitis amet.
+  </p>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, <b> dignissimos?</b> Cupiditate doloremque nesciunt voluptate, pariatur, 
+    at mollitia autem repellat harum velit quod in expedita assumenda. <u> Similique magni debitis amet.</u> <!-- <u>  Texto subrrallado-->
+  </p>
+
+  <br>
+  <!-- <br> es un salto de linea en la pagina -->
+  <hr>
+
+  <br>
+
+  <br>
+
+  <hr style="color: rgb(13, 255, 0);">
+  <!-- <hr> es una linea horizontal, visualmente en la pagina -->
+  <br>
+
+  <br>
+
+  <br>
+
+  <hr>
+
+  <!--     Etiquetas divisorias y separadores
+
+    - br: nos sirve para dar una separacion (salto de linea)
+    - hr: para mostrar una linea que sirve como separador -->
+  
+    <p style="color: rgb(255, 0, 0)">
+    <!-- blockquote sirve para crear un boque de texto como si fuera un texto citado -->
+    <blockquote> <strong> <!--  <b> Etiqueta utilizada como atributo para convertir texto a negritas -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Commodi, praesentium dignissimos? Cupiditate doloremque nesciunt voluptate, 
+      pariatur, at mollitia autem repellat harum velit quod in expedita assumenda. <del>  Similique magni debitis amet. </del> <!-- <del> tacha el texto-->
+    </blockquote>
+  </p>
+
+  <!-- Resumen de etiquetas de atributos para formatear texto 
+    
+    em es para cursivas
+    u es para texto subrrayado
+    b es para negritas
+    strong es para textos largos en negritas
+    blockquote sirve para crear un boque de texto como si fuera un texto citado
+    del para tachar texto   -->
+
+  <!-- Forma de agregar imagen externa -->
+  <img src="https://media.gettyimages.com/id/1186811830/es/foto/norwegian-singer-aurora-aksnes-performs-at-the-o2-institute-birmingham-on-november-10-2019-in.jpg
+  ?s=612x612&w=gi&k=20&c=fG4VZqkxQl6c2TK8EjW5ag1VA0wRnarp76m4NniipK8=" alt="Aurora Photo">
+
+  <!-- Forma de agregar imagen interna -->
+  <img src="/Aurora.jpg" title="Foto de Aurora" width="200px">
+
+  <!-- Etiquetas de imagenes
+    La etiqueta img nos permite agregar una imagen en un documento web. Los formatos mas utilizados son: jpeg, png, gif, webp.
+    Algunos de los atributos de la etiqueta img son:
+
+    - src (source): definir la ubicacion del archivo (interna o externa)
+    - width: definir el ancho de la imagen
+    - height define el alto de la imagen
+    - alt: define la descripcion de la imagen (para temas de SEO y accesibilidad) -->
+
+  <!-- referencia a sitio externo -->
+  <a href="https://www.google.com" target="_blank">Este texto me lleva a Google</a>
+
+  <br>
+  <!-- referencia a sitio o elemento interno -->
+  <a href="/Aurora.jpg" title="Foto de Aurora" download="Aurora_photo">Dercarga la imagen de aurora aquí</a>
+
+  <!--     Etiquetas de enlace <a>
+  Permiten la navegacion por medio de hipervinculos (links) que realizan la conexion y referencias otros archivos o paginas web, ya sea dentro de la misma aplicacion o de forma externa.
+  atributos de la etiqueta
+
+    - href: sirve para definer la ubicacion del elemento a donde nos vamos a enlazar
+    - target: definir como se abre ese elemento
+        - misma ventana
+        - ventana adicional  -->
+
+<h3>Liasta ordenadas de taquitos</h3>
+
+<ol type="I">
+  <li>Taquitos de pastor</li>
+  <li>Taquitos de chicharron</li>
+  <li>Taquitos de adobada</li>
+  <li>Taquitos de guisado</li>
+  <li>Taquitos de carnitas</li>
+</ol>
+
+<!-- Etiquetas para listas ordenadas y desordenadas 
+
+Sirven para crear listas ordenadas (numeros, letras, numeros romanos) y 
+listas desordenadas (no siguen un orden y se usan bullets o figuritas para ordenar los elementos.)   -->
+
+<h3>Lista Desordenada de pendientes</h3>
+
+<ul style="list-style-type: circle;">
+  <li>Leer</li>
+  <li>Estudiar</li>
+  <li>Tocar piano</li>
+</ul>
+
+  <!-- Atributos 
+    
+    Los atributos de las etiquetas son una serie de elementos 
+    que se pueden agregar a una etiqueta en si
+    para dotarla de mas características. (N todas las etiquetas tienen atributos).
+    Estos atributos nos permiten agregar elementos como estilos,
+    identificadores, eventos, etc.
+
+    Identificadores:
+    - Class: Marcan un conjunto de elementos
+    - ID: Marcan un elemento en específico
+    - Name: Marca el nombre de la etiqueta  
+  
+    Diferencias entre src y href
+    src (source): incrustar un recurso (pegamos en el documento)
+    href (referencia): existe un enlace que nos comunica a ese elemento, pero que no necesariamente incrusta el elemento. -->
+
+</body>
+</html>
